@@ -41,7 +41,7 @@ const Tours = () => {
                   <span
                     key={number}
                     onClick={() => setPage(number)}
-                    className={page == number ? "active__page" : ""}
+                    className={page === number ? "active__page" : ""}
                   >
                     {number + 1}
                   </span>
