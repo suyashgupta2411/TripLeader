@@ -12,7 +12,11 @@ const TourDetails = () => {
   const reviewMsgRef = useRef("");
   const [tourRating, setTourRating] = useState(null);
 
-  const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
+  const {
+    data: tour,
+    loading,
+    error,
+  } = useFetch(`${BASE_URL}/api/v1/tours/${id}`);
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 

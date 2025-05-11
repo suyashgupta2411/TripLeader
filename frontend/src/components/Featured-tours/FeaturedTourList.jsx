@@ -11,7 +11,7 @@ const FeaturedTourList = () => {
     data: featuredTours,
     loading,
     error,
-  } = useFetch(`${BASE_URL}/tours/search/getFeaturedTours`);
+  } = useFetch(`${BASE_URL}/api/v1/tours/search/getFeaturedTours`);
 
   console.log(featuredTours);
 

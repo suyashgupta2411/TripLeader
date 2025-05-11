@@ -34,7 +34,7 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await fetch(`${BASE_URL}/auth/login`, {
+      const res = await fetch(`${BASE_URL}/api/v1/auth/login`, {
         method: "post",
         headers: {
           "content-type": "application/json",
