@@ -26,7 +26,7 @@ const SearchBar = ({ onContentUpdate }) => {
   const interactWithGeminiAPI = async (prompt) => {
     try {
       const response = await fetch(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBGTmycbxpfyZsvSn2_vzGqU25QIRzLl-0",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAqOH1aHX3CjMYQdXTjzmaUq9z2VuMjADw",
         {
           method: "POST",
           headers: {
